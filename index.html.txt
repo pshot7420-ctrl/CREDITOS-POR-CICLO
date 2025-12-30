@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Malla Interactiva – Ingeniería Industrial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Malla Interactiva</h1>
+      <p>Ingeniería Industrial · 10 ciclos</p>
+    </div>
+
+    <div class="actions">
+      <button id="btnReset" class="btn btn-ghost" type="button">Reiniciar</button>
+      <button id="btnExport" class="btn" type="button">Exportar</button>
+      <label class="btn btn-ghost file">
+        Importar
+        <input id="fileImport" type="file" accept="application/json" />
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="legend card">
+      <div class="legend-item">
+        <span class="dot locked"></span><span>Bloqueado</span>
+      </div>
+      <div class="legend-item">
+        <span class="dot available"></span><span>Disponible</span>
+      </div>
+      <div class="legend-item">
+        <span class="dot done"></span><span>Aprobado</span>
+      </div>
+      <div class="progress" aria-label="Progreso">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <div class="progress-text" id="progressText">0 / 0 aprobados</div>
+    </section>
+
+    <section id="grid" class="grid" aria-label="Malla por ciclos">
+      <!-- Se renderiza con JS -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Tip: clic en un ramo para aprobar/desaprobar. Se guarda automáticamente.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
