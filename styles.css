@@ -1,93 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #f6c1d1, #cbb4f4);
   min-height: 100vh;
 }
 
-.welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.welcome-box {
-  background: white;
+.container {
   padding: 30px;
-  border-radius: 14px;
-  text-align: center;
-  width: 280px;
 }
 
-.welcome-box input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+h1 {
+  margin-bottom: 5px;
+  color: #4a235a;
 }
 
-.welcome-box button {
-  background: #8a5bd6;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  color: white;
-}
-
-header button {
-  background: rgba(255,255,255,0.25);
-  border: none;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  cursor: pointer;
+.subtitle {
+  margin-bottom: 25px;
+  color: #5e5e5e;
 }
 
 .grid {
   display: flex;
-  gap: 16px;
-  padding: 20px;
+  gap: 18px;
   overflow-x: auto;
+  padding-bottom: 10px;
 }
 
 .cycle {
   background: white;
-  min-width: 260px;
-  padding: 14px;
-  border-radius: 16px;
+  min-width: 270px;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .cycle h2 {
-  margin: 0 0 6px 0;
+  margin: 0;
   color: #7a4f6a;
 }
 
-.sub {
+.credits-box {
   font-size: 13px;
-  margin-bottom: 10px;
-  color: #555;
+  margin: 10px 0 12px;
+  padding: 8px;
+  background: #f3e5f5;
+  border-radius: 8px;
+  color: #5a2a82;
 }
 
 .course {
-  background: #f8e6ef;
+  background: #fde4ef;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 14px;
   margin-bottom: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transition: 0.2s;
 }
 
 .course.done {
@@ -95,31 +65,37 @@ header button {
   text-decoration: line-through;
 }
 
-.name {
+.course-name {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #4a235a;
+}
+
+.course-credits {
+  font-size: 11px;
+  color: #7a4f6a;
 }
 
 .controls {
+  margin-top: 6px;
   display: flex;
   gap: 6px;
 }
 
-.ctrl {
+button {
   border: none;
   border-radius: 6px;
   padding: 4px 8px;
+  font-size: 11px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.ctrl.ok {
+.approve {
   background: #4caf50;
   color: white;
 }
 
-.ctrl.no {
+.fail {
   background: #e53935;
   color: white;
 }
-
