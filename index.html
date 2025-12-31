@@ -2,34 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Curricular – Ingeniería Industrial</title>
+  <title>Malla Curricular</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- PANTALLA INICIAL -->
-  <div id="welcomeScreen" class="welcome">
-    <div class="welcome-box">
-      <h1>Malla Curricular</h1>
-      <p>Ingresa tu nombre</p>
-      <input type="text" id="nameInput" placeholder="Tu nombre">
-      <button id="startBtn">Entrar</button>
-    </div>
-  </div>
+<div class="container">
+  <h1>Malla Curricular – Ingeniería Industrial</h1>
+  <p class="subtitle">Organiza tus cursos y créditos</p>
 
-  <!-- APP -->
-  <div id="app" style="display:none;">
-    <header>
-      <h1 id="saludo"></h1>
-      <button id="resetBtn">Reiniciar</button>
-    </header>
+  <div id="grid" class="grid"></div>
+</div>
 
-    <main>
-      <div id="grid" class="grid"></div>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
