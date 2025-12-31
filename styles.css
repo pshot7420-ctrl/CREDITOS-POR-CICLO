@@ -1,1 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f6c1d1, #cbb4f4);
+  min-height: 100vh;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-box {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  width: 280px;
+}
+
+.welcome-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.welcome-box button {
+  background: #8a5bd6;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+
+header button {
+  background: rgba(255,255,255,0.25);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.cycle {
+  background: white;
+  min-width: 260px;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.cycle h2 {
+  margin: 0 0 6px 0;
+  color: #7a4f6a;
+}
+
+.sub {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.course {
+  background: #f8e6ef;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course.done {
+  background: #d8f3dc;
+  text-decoration: line-through;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+}
+
+.ctrl {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ctrl.ok {
+  background: #4caf50;
+  color: white;
+}
+
+.ctrl.no {
+  background: #e53935;
+  color: white;
+}
 
